@@ -12,6 +12,10 @@ __pycache__/
 
 # document
 .idea/
+.data/
+.pickle/
+data/
+pickle/
 
 
 # C extensions
