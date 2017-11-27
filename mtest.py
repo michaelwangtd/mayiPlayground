@@ -4,16 +4,49 @@
 import sklearn
 import re
 from queue import Queue
+import time
+
+
+tStr = '12'
+# print(len(tStr))
+print(tStr[:2])
 
 
 
-que = Queue()
-testList = ['1','2','3','4','1','2','3']
-for item in testList:
-    if not item in que:
-        que.put(item)
-while not que.empty():
-    print(que.get())
+# # str = 'landlord:20-22可以'
+# str = 'landlord: 23.24号没有房间了你看的这间已经被预定了的'
+#
+# # rex = '\d+[到至-\～\~]d+'
+# # rex = '\d+[\-\~\～到至]\d+'
+# # rex = '\d+'
+# rex = '\d+[\.\,\，\,\、]\d+[号日]'
+# reResult = re.findall(rex,str,re.S)
+# print(reResult)
+
+
+# tStr = '没有 2017'
+# rightSent = tStr.replace(' ','')
+# rightSent = re.sub('\d*','',rightSent)
+# rightSent.replace('！','').replace('，','').replace(',','').replace('。','') \
+#     .replace('？', '').replace('?','').replace('、','').replace('[','')
+
+
+# date = '2016-11-16'
+# re = time.mktime(time.strptime(date,'%Y-%m-%d'))
+# print(re)
+# retime = time.strftime('%Y-%m-%d %H:%M:%S',time.strptime(date,'%Y-%m-%d'))
+# print(retime)
+
+
+
+
+# que = Queue()
+# testList = ['1','2','3','4','1','2','3']
+# for item in testList:
+#     if not item in que:
+#         que.put(item)
+# while not que.empty():
+#     print(que.get())
 
 
 

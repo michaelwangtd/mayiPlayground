@@ -23,7 +23,7 @@ def writeList2csv(filePath,infoList):
     for itemList in infoList:
         line = ''
         if isinstance(itemList,list):
-            line = ','.join(itemList)
+            line = '    '.join(itemList)
         if isinstance(itemList,str):
             line = itemList.strip()
         if line:
@@ -53,5 +53,7 @@ def loadPickle(filePath):
 def checkdir(path):
    if os.path.exists(path) == False:
        os.makedirs(path)
+
+
 
 
