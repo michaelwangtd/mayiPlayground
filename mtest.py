@@ -5,11 +5,53 @@ import sklearn
 import re
 from queue import Queue
 import time
+from datetime import datetime
+from pandas import Series,DataFrame
+import pandas as pd
 
 
-tStr = '12'
-# print(len(tStr))
-print(tStr[:2])
+
+# print(517-141+63)
+
+
+
+# print(517*20)
+
+
+# def getOrderedSeries(inSeries):
+#     resultList = []
+#     for item in inSeries:
+#         if isinstance(item,float):
+#             resultList.append(item)
+#         elif isinstance(item,str):
+#             cakeList = item.strip().split('\n')
+#             cakeList = [cake.split(':') for cake in cakeList]
+#             cakeList = sorted(cakeList,key=lambda item: item[-2])
+#             cakeList = [':'.join(cake) for cake in cakeList]
+#             cakestr = '\n'.join(cakeList)
+#             resultList.append(cakestr)
+#     return Series(resultList)
+
+
+
+
+
+
+# t1 = [1,2,3,4,5,6]
+# t2 = [2,3,4]
+# re = set(t1).difference(set(t2))
+# print(re)
+# print(type(re))
+
+
+
+# date = datetime.now().strftime('%Y-%m-%d')
+# print(date)
+
+
+# tStr = '12'
+# # print(len(tStr))
+# print(tStr[:2])
 
 
 
