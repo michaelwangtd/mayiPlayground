@@ -10,6 +10,27 @@ from pandas import Series,DataFrame
 import pandas as pd
 
 
+# print(8/5*100)
+# print(160/60)
+
+
+# print(15/100)
+
+
+# t = ['a','b','c']
+#
+# print(t[0])
+# print(''.join(t[1:]))
+
+
+
+
+
+# t = Series([1,2,3,4])
+# for v in t:
+#     print(type(v),v)
+
+
 
 # print(517-141+63)
 
