@@ -8,6 +8,131 @@ import time
 from datetime import datetime
 from pandas import Series,DataFrame
 import pandas as pd
+import numpy as np
+
+
+
+
+
+
+
+# t = 'abcd'
+# for i,v in enumerate(t):
+#     print(i,v)
+
+
+
+
+#1244
+# print(1243-755)
+# print(1785-1243)
+# print(7063-542)
+# print(6521-488)
+# print(1243-488)
+# print(1-(755/6033))
+
+
+
+# print(1776-1287)
+# print(7042-489)
+# print(1287-791)
+#
+# print(6553-496)
+# print(1287-496)
+
+# print(1-(791/6057))
+
+
+
+# print(1-(1731/6962))
+# print(1-(758/6962))
+# # print(6962-494)
+# print(1-(1237/6468))
+# print(1-(758/6468))
+
+
+# print(1691-478)
+# print(1-(1213/6468))
+
+
+
+# print(6468-479)
+#
+# print(1-(1237/6468))
+#
+# print(1-(758/5989))
+
+
+# print(1237-758)
+
+
+# t1 = '888A999A123'
+# t2 = '888A999A213'
+# if t1>t2:
+#     print(t1)
+# elif t1<t2:
+#     print(t2)
+
+# print(1700/4)
+# print(425/60)
+
+
+
+# t = 'sjdskjf'
+# print(t[:2])
+
+
+# np.random.rand()
+# np.random.randn()
+
+
+# if __name__ == '__main__':
+#     pd.set_option('display.width',5000)
+#
+#     df = pd.DataFrame({'key1':['a','a','b','b','a'],\
+#                   'key2':['one','two','one','two','one'],\
+#                   'd1':np.random.randn(5),\
+#                   'd2':np.random.randn(5)
+#                   })
+#     # print(df)
+#
+#     re = df['d1'].groupby(df['key1']).sum()
+#     # print(re)
+#
+#     for idx in df.index:
+#         print('--------------------')
+#         print(type(df.loc[idx]),df.loc[idx])
+#         print(type(df.loc[idx].values),df.loc[idx].values)
+#         break
+
+
+
+# df = pd.read_csv('./noroom_deleted_fw.txt',header=None)
+# df = df[0].values[:]
+# print(type(df))
+# print(df)
+# if '顶完' in df:
+#     print('true')
+
+
+
+# ds2 = [[1,2],[3,4],[5,6]]
+# ds2 = np.asarray(ds2)
+# print(type(ds2))
+# df2 = pd.DataFrame(ds2,columns=['a','b'])
+# print(type(df2))
+# print(df2)
+# df2.to_csv('./df2_test.csv')
+
+
+
+
+# t = [[1,2],[2,3],[3,4],[4,5]]
+# print(type(t))
+# t = pd.DataFrame(t)
+# print(type(t))
+# print(t)
+
 
 
 # print(8/5*100)

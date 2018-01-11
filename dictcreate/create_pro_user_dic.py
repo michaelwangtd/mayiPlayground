@@ -1,15 +1,9 @@
 #!/usr/bin python
 # -*- coding:utf-8 -*-
 
+import pandas as pd
+
 import codecs
-
-class Singleton(object):
-    def __new__(cls,*args,**kwargs):
-        if not hasattr(cls._instence):
-            cls._instence = super(Singleton,cls).__new__(cls,*args,**kwargs)
-        return cls._instence
-
-
 
 def readListfromTxt(filePath):
     resultList = []
@@ -37,29 +31,15 @@ def writeList2csv(filePath,infoList):
             fw.write(line + '\n')
     fw.close()
 
-def getItemSetList(infos):
-    result_list = []
-    for info in infos:
-        result_list.append(' '.join(sorted(list(set(info.split(' '))),key=lambda item:len(item))))
-    return result_list
-
-
 if __name__ == '__main__':
+    result_list = []
+
     infos = readListfromTxt('d:/data/input.txt')
-    infos = getItemSetList(infos)
     print(len(infos))
-    # infos = list(set(infos))
-    # print(len(infos))
-    result = sorted(infos)
-    writeList2csv('d:/data/result.txt',result)
-
-    # 1
-    # for item in result:
-    #     print(item)
-
-    # 2
-    out = []
+    for info in infos:
+        result_list.extend(info.strip().split(' '))
+    result_list = list(set(result_list))
+    result = sorted(result_list)
+    writeList2csv('d:/data/result.txt', result)
     for item in result:
-        out.extend(item.strip().split(' '))
-    for item in out:
         print(item)
