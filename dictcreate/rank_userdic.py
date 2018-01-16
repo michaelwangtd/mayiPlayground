@@ -46,10 +46,10 @@ def getItemSetList(infos):
 
 if __name__ == '__main__':
     infos = readListfromTxt('d:/data/input.txt')
-    infos = getItemSetList(infos)
+    # infos = getItemSetList(infos)
     print(len(infos))
-    # infos = list(set(infos))
-    # print(len(infos))
+    infos = list(set(infos))
+    print(len(infos))
     result = sorted(infos)
     writeList2csv('d:/data/result.txt',result)
 
