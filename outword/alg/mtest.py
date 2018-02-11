@@ -62,6 +62,34 @@ t4.next = t5
 head = t1
 
 
+class Ball(object):
+    def __init__(self,nums,snum):
+        self.nums = nums
+        self.snum = snum
+        print(self.nums)
+        print(self.snum)
+    def print_nums(self):
+        print(self.nums)
+        print(self.snum)
+    def del_item(self):
+        temp = self.nums
+        temp.append('end')
+        temp.pop(0)
+
+        t2 = self.snum
+        t2 = 'end'
+'''
+['begin', 1, 2]
+begin
+[1, 2, 'end']
+begin
+'''
+ball = Ball(['begin',1,2],'begin')
+ball.del_item()
+ball.print_nums()
+
+
+
 
 
 
