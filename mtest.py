@@ -9,11 +9,83 @@ from datetime import datetime
 from pandas import Series,DataFrame
 import pandas as pd
 import numpy as np
+from collections import Counter
+
+
+
+t = [0]*26
+print(t)
+print(len(t))
+
+
+# # t = [1,3,1,2,1,2]
+# nums = [1,1,1,2,2,3]
+# k = 2
+#
+# num,fre = zip(*Counter(nums).most_common(k))
+# print(num,fre)
+
+
+
+
+# def topKFrequent(nums, k):
+#     dic = {}
+#     for num in nums:
+#         if num not in dic:
+#             dic[num] = 0
+#         dic[num] += 1
+#
+#     bucket = []
+#     for i in range(len(nums) + 1):
+#         bucket.append([])
+#
+#     for ki, vi in dic.items():
+#         bucket[vi].append(ki)
+#
+#     rst = []
+#     for i in range(len(bucket) - 1, -1, -1):
+#         if bucket[i]:
+#             rst.extend(bucket[i])
+#             if len(rst) == k:
+#                 return rst
+#             # while bucket[i]:
+#             #     n = bucket[i].pop[0]
+#             #     rst.append(n)
+#             #     if len(rst) == k:
+#             #         return rst
+#
+#
+# nums = [1,1,1,2,2,3]
+# k = 2
+# rst = topKFrequent(nums,k)
+# print(rst)
+
+
+
+
+# def is_question(line):
+#     question_list = ['岂', '何', '几', '?', '吗', '啥', '怎', '何', '呢', '谁', '？', '么', '哪', '嗎', '几','咋',
+#                      '怎么', '多少', '怎样', '如何', '几时', '怎的', '几时', '什么', '哪里', '哪儿', '多远',
+#                      '请问', '多钱', '咋办', '有啥', '多长', '是否', '多久', '哪个', '怎么样', '为什么', '能不能',
+#                      '方便不', '行不行', '近不近', '免费不', '收费不', '有房没', '有房吗', '远不远', '方不方便']
+#
+#     for w in question_list:
+#         if w in line:
+#             print(w)
+#             return True
+#     return False
+#
+# t = '民宿在山东路18号曼哈顿广场，对面是农业银行，如果您开车您的的车可以正对建设银行进去，停在地下停车场，一晚上5元。如果您步行，您可以面对建设银行从旁边小路上行到达C入口，电梯到1812房间。密码是：先按#密码970214，按#键确认就可以了。室内免费Wi-Fi：本家May豆小小 。5G免费WI-FI ：本家的窝窝，密码都是：960316dxx。祝您住的温馨愉快，有什么不懂的可以随时问我。给亲推荐青岛本地人才知道好吃的：王姐烧烤，西镇臭豆腐、西镇电烤肉、赵家牛肉砂锅（台西路）、老三炒面、福萍混沌、排骨米饭、咖啡店：一杯沧海、独崖。酒吧h：老菲、loft、胡桃里。'
+# is_question(t)
 
 
 
 
 
+# rst = sorted(t,key = lambda item: len(item))
+# print(rst)
+# for w in rst:
+#     print(w)
 
 
 # t = 'abcd'

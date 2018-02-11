@@ -43,10 +43,17 @@ def getItemSetList(infos):
         result_list.append(' '.join(sorted(list(set(info.split(' '))),key=lambda item:len(item))))
     return result_list
 
+def getSplitWordList(infos):
+    result_list = []
+    for info in infos:
+        result_list.extend(list(set(info.split(' '))))
+    return result_list
+
 
 if __name__ == '__main__':
     infos = readListfromTxt('d:/data/input.txt')
     # infos = getItemSetList(infos)
+    infos = getSplitWordList(infos)
     print(len(infos))
     infos = list(set(infos))
     print(len(infos))
