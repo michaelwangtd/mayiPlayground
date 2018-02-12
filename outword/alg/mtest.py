@@ -21,13 +21,57 @@ class TreeNode(object):
 
 
 
+
+
+
+
+t = [1,2,3]
+def permute(nums):
+
+
+
+
+
+
+
+
+
+
+
+
+
+# class Solution(object):
+#     def sortList(self, head):
+#         if head == None or head.next == None:
+#             return head
+#         mid = self.get_middle_node(head)
+#         nxt = mid.next
+#         mid.next = None
+#         return self.merge_list(self.sortList(head),self.sortList(nxt))
+#
+#     def merge_list(self,ha,hb):
+#         dummy = cur = ListNode(-1)
+#         while ha and hb:
+#             if ha.val<hb.val:
+#                 cur.next = ha
+#                 ha = ha.next
+#             else:
+#                 cur.next = hb
+#                 hb = hb.next
+#             cur = cur.next
+#         cur.next = ha if ha else hb
+#         head = dummy.next
+#         dummy.next = None
+#         return head
+#
+#     def get_middle_node(self,head):
+#         slow = fast = head
+#         while fast.next != None and fast.next.next != None:
+#             fast = fast.next.next
+#             slow = slow.next
+#         return slow
+
 # t = [1,2,3,4,5]
-
-
-
-
-
-
 
 
 
@@ -50,58 +94,50 @@ class TreeNode(object):
 #         inorderRecursion(root.right)
 
 
-t1 = ListNode(1)
-t2 = ListNode(2)
-t3 = ListNode(3)
-t4 = ListNode(4)
-t5 = ListNode(5)
-t1.next = t2
-t2.next = t3
-t3.next = t4
-t4.next = t5
-head = t1
+# t1 = ListNode(1)
+# t2 = ListNode(2)
+# t3 = ListNode(3)
+# t4 = ListNode(4)
+# t5 = ListNode(5)
+# t1.next = t2
+# t2.next = t3
+# t3.next = t4
+# t4.next = t5
+# head = t1
 
 
-class Ball(object):
-    def __init__(self,nums,snum):
-        self.nums = nums
-        self.snum = snum
-        print(self.nums)
-        print(self.snum)
-    def print_nums(self):
-        print(self.nums)
-        print(self.snum)
-    def del_item(self):
-        temp = self.nums
-        temp.append('end')
-        temp.pop(0)
+# print((0+2)>>2)
+# print((0+2)//2)
 
-        t2 = self.snum
-        t2 = 'end'
-'''
-['begin', 1, 2]
-begin
-[1, 2, 'end']
-begin
-'''
-ball = Ball(['begin',1,2],'begin')
-ball.del_item()
-ball.print_nums()
+# print(4>>1>>1)
+# print(2>>1)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+# class Ball(object):
+#     def __init__(self,nums,snum):
+#         self.nums = nums
+#         self.snum = snum
+#         print(self.nums)
+#         print(self.snum)
+#     def print_nums(self):
+#         print(self.nums)
+#         print(self.snum)
+#     def del_item(self):
+#         temp = self.nums
+#         temp.append('end')
+#         temp.pop(0)
+#
+#         t2 = self.snum
+#         t2 = 'end'
+# '''
+# ['begin', 1, 2]
+# begin
+# [1, 2, 'end']
+# begin
+# '''
+# ball = Ball(['begin',1,2],'begin')
+# ball.del_item()
+# ball.print_nums()
 
 # def groupAnagrams(strs):
 #     """
