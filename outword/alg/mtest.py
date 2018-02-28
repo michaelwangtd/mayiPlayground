@@ -25,8 +25,8 @@ class TreeNode(object):
 
 
 
-t = [1,2,3]
-def permute(nums):
+# t = [1,2,3]
+# def permute(nums):
 
 
 
